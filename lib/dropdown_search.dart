@@ -296,7 +296,7 @@ class DropdownSearchState<T> extends State<DropdownSearch<T>> {
                   _selectedItemAsString(data),
                 )
               : Text(_selectedItemAsString(data),
-                  style: TextStyle(color: Colors.white)),
+                  style: TextStyle(color: Colors.white,fontSize: 16)),
         ),
         if (!widget.showAsSuffixIcons) _manageTrailingIcons(data),
       ],
