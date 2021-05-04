@@ -296,7 +296,7 @@ class DropdownSearchState<T> extends State<DropdownSearch<T>> {
                   _selectedItemAsString(data),
                 )
               : Text(_selectedItemAsString(data),
-                  style: Theme.of(context).textTheme.subtitle1),
+                  style: TextStyle(color: Colors.white)),
         ),
         if (!widget.showAsSuffixIcons) _manageTrailingIcons(data),
       ],
@@ -385,7 +385,7 @@ class DropdownSearchState<T> extends State<DropdownSearch<T>> {
               )
             : IconButton(
                 icon: widget.dropDownButton ??
-                    const Icon(Icons.arrow_drop_down, size: 24),
+                    const Icon(Icons.arrow_drop_down, size: 24,color: Colors.white),
                 onPressed: dropdownButtonPressed,
               ),
       ],
